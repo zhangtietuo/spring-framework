@@ -156,7 +156,7 @@ class CglibAopProxy implements AopProxy, Serializable {
 	}
 
 	@Override
-	public Object getProxy(@Nullable ClassLoader classLoader) {
+	public Object getProxy(@Nullable ClassLoader classLoader) {//生成代理对象
 		if (logger.isTraceEnabled()) {
 			logger.trace("Creating CGLIB proxy: " + this.advised.getTargetSource());
 		}
